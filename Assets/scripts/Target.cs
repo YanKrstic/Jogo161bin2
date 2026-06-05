@@ -14,7 +14,7 @@ public class Target : MonoBehaviour
     public bool moveVertical = false;
 
     [HideInInspector]
-    public int moveSpeed = 3;
+    public float moveSpeed = 3f;
 
     [HideInInspector]
     public float moveRange = 5f;
@@ -59,7 +59,7 @@ public class Target : MonoBehaviour
 
         transform.position = newPos;
 
-        // Rotação
+        // Rotaï¿½ï¿½o
         transform.Rotate(Vector3.up, 180 * Time.deltaTime);
     }
 

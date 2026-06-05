@@ -18,7 +18,7 @@ public class TargetSpawner : MonoBehaviour
         public bool moveHorizontal = false;
         public bool moveVertical = false;
 
-        public float moveSpeed = 4f;
+        public float moveSpeed = 3f;
 
         public float moveRange = 5f;
         public int health = 1;
@@ -52,12 +52,14 @@ public class TargetSpawner : MonoBehaviour
                     }
                 }
             }
+
+            if (currentCount < point.quantity)
+            {
+                SpawnTarget(point);
+            }
         }
 
-        if (curruntCount < point.quantity)
-        {
-            SpawnTarget(point);
-        }
+
     }
 
     void SpawnAllTargets()
