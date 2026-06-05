@@ -799,7 +799,7 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
     moveHorizontal: 1
     moveVertical: 0
-    moveSpeed: 0.3
+    moveSpeed: 1
     moveRange: 5
     health: 2
     pointsValue: 10
@@ -842,7 +842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099636086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 1.184}
+  m_LocalPosition: {x: 0.623, y: 0.328, z: 1.428}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1284,12 +1284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2497bf547849b81418abfeae38d46a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 360
+  mouseSensitivity: 450
   playerBody: {fileID: 1961159456}
   lockCursor: 1
   bulletPrefab: {fileID: 696409545306587448, guid: e018eafbe6d89574387d180e28e011fe, type: 3}
   firePoint: {fileID: 1099636087}
-  bulletSpeed: 2
+  bulletSpeed: 30
   fireRate: 0.2
   maxAmmo: 30
   reloadTime: 1
