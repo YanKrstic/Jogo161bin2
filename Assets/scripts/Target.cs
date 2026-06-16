@@ -60,12 +60,14 @@ public class Target : MonoBehaviour
         transform.position = newPos;
 
         // Rota��o
-        transform.Rotate(Vector3.up, 180 * Time.deltaTime);
+        //transform.Rotate(Vector3.up, 180 * Time.deltaTime);
     }
 
-    void OnTriggerEnter(Collider other)
+    // Substitua o OnTriggerEnter inteiro por este bloco:
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Bullet"))
+        // Note que em OnCollisionEnter, precisamos usar collision.gameObject para ver a Tag
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             health--;
 
@@ -74,12 +76,12 @@ public class Target : MonoBehaviour
                 if (playerShooter != null)
                     playerShooter.AddScore(pointsValue);
 
-                Destroy(other.gameObject);
-                Destroy(gameObject);
+                Destroy(collision.gameObject); // Destrói a bala
+                Destroy(gameObject);           // Destrói o alvo
             }
             else
             {
-                Destroy(other.gameObject);
+                Destroy(collision.gameObject); // Destrói a bala se o alvo ainda tiver vida
             }
         }
     }
