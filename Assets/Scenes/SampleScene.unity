@@ -459,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521435127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.19, y: 1.35, z: 4.67}
+  m_LocalPosition: {x: -3.19, y: 1.35, z: -11.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -583,14 +583,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819462794}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.88294756, z: 0, w: 0.46947163}
   m_LocalPosition: {x: -21.93, y: 3.32, z: 1.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 124, z: 0}
 --- !u!1001 &847705387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -802,9 +802,9 @@ MonoBehaviour:
     moveVertical: 0
     moveSpeed: 5
     moveRange: 15
-    health: 3
+    health: 2
     pointsValue: 10
-  - position: {fileID: 819462795}
+  - position: {fileID: 1255196968}
     targetPrefab: {fileID: 505542726121373647, guid: d169d520fc0f5634db3e89b481dcd982, type: 3}
     quantity: 1
     scale: {x: 0.2, y: 0.2, z: 0.2}
@@ -813,8 +813,41 @@ MonoBehaviour:
     moveVertical: 1
     moveSpeed: 5
     moveRange: 15
-    health: 3
+    health: 2
     pointsValue: 10
+  - position: {fileID: 1255196968}
+    targetPrefab: {fileID: 505542726121373647, guid: d169d520fc0f5634db3e89b481dcd982, type: 3}
+    quantity: 1
+    scale: {x: 0.2, y: 0.2, z: 0.2}
+    rotation: {x: 0, y: 0, z: 0}
+    moveHorizontal: 1
+    moveVertical: 0
+    moveSpeed: 5
+    moveRange: 15
+    health: 2
+    pointsValue: 10
+  - position: {fileID: 521435128}
+    targetPrefab: {fileID: 505542726121373647, guid: d169d520fc0f5634db3e89b481dcd982, type: 3}
+    quantity: 1
+    scale: {x: 0.2, y: 0.2, z: 0.2}
+    rotation: {x: 0, y: 0, z: 0}
+    moveHorizontal: 1
+    moveVertical: 0
+    moveSpeed: 40
+    moveRange: 20
+    health: 3
+    pointsValue: 30
+  - position: {fileID: 521435128}
+    targetPrefab: {fileID: 505542726121373647, guid: d169d520fc0f5634db3e89b481dcd982, type: 3}
+    quantity: 1
+    scale: {x: 0.2, y: 0.2, z: 0.2}
+    rotation: {x: 0, y: 0, z: 0}
+    moveHorizontal: 1
+    moveVertical: 1
+    moveSpeed: 40
+    moveRange: 20
+    health: 3
+    pointsValue: 30
 --- !u!4 &1006122574
 Transform:
   m_ObjectHideFlags: 0
@@ -823,7 +856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006122572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5117977, y: -0.15372166, z: 3.987344}
+  m_LocalPosition: {x: -2.5117977, y: -0.15372166, z: 12.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -885,7 +918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255196967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.78, y: 1.35, z: 3.987344}
+  m_LocalPosition: {x: -0.78, y: 1.35, z: 25.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1302,7 +1335,7 @@ MonoBehaviour:
   firePoint: {fileID: 1099636087}
   bulletSpeed: 30
   fireRate: 0.2
-  maxAmmo: 30
+  maxAmmo: 15
   reloadTime: 1
   maxShootDistance: 100
   crosshair: {fileID: 0}
@@ -1311,7 +1344,7 @@ MonoBehaviour:
   gameOverText: {fileID: 221542408}
   restartButton: {fileID: 0}
   scorePerHit: 10
-  gameDuration: 60
+  gameDuration: 30
   targetLayer:
     serializedVersion: 2
     m_Bits: 8
